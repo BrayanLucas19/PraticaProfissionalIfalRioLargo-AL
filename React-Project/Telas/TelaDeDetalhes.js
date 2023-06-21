@@ -28,10 +28,10 @@ export default function TelaDeDetalhes({ route }) {
 
                 <View style={{ alignItems: 'center', width: 350 }}>
                     <Card style={{ alignItems: 'center', marginTop: 40 }}>
-                        <Card.Cover style={{ width: 350, height: 450, borderBottomEndRadius: 0 }} source={{ uri: maps.Image }} />
+                        <Card.Cover style={{ width: 350, height: 450, borderBottomEndRadius: 0 }} source={{ uri: maps.imgPraiasDoBrasil }} />
 
                         <Card.Content style={{ marginTop: 20 }}>
-                            <Title>{maps.name}</Title>
+                            <Title>{maps.nomesPraiasDoBrasil}</Title>
                             <Paragraph></Paragraph>
                         </Card.Content>
                     </Card>

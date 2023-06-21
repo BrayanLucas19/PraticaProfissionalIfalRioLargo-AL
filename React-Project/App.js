@@ -9,6 +9,7 @@ import TelaDeDetalhes from './Telas/TelaDeDetalhes';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { Drawer } from 'react-native-paper';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -41,4 +42,3 @@ function MyStack() {
     </Stack.Navigator>
   );
 }
-

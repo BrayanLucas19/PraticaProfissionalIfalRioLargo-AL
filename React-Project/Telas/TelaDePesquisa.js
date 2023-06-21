@@ -4,7 +4,6 @@ import { View, FlatList, ScrollView } from "react-native";
 
 export default function TelaDePesquisa() {
     const [usuarios, setUsuarios] = useState([]);
-    const [carrinho, setCarrinho] = useState([]);
 
     const getUsuarios = async () => {
         try {
@@ -36,13 +35,37 @@ export default function TelaDePesquisa() {
                             renderItem={({ item }) => (
                                 <View>
                                     <Card style={{ margin: 4, width: 150 }} onPress={() => navigation.navigate('Detalhes', { id: item.id })}>
-                                        <Card.Cover style={{ height: 150 }} source={{ uri: item.BigImage }} />
+                                        <Card.Cover style={{ height: 150 }} source={{ uri: item.imgPraiasDoBrasil }} />
                                         <IconButton
                                             icon='heart' iconColor='white' size={20} onPress={() => console.log('Apertei')}
                                             style={{ position: 'absolute' }} />
 
                                         <Card.Content>
-                                            <Title style={{ textAlign: 'center', fontSize: 16 }}>{item.name}</Title>
+                                            <Title style={{ textAlign: 'center', fontSize: 13 }}>{item.nomesPraiasDoBrasil}</Title>
+                                        </Card.Content>
+
+                                    </Card>
+
+                                    <Card style={{ margin: 4, width: 150 }} onPress={() => navigation.navigate('Detalhes', { id: item.id })}>
+                                        <Card.Cover style={{ height: 150 }} source={{ uri: item.imgCidadesDoBrasil }} />
+                                        <IconButton
+                                            icon='heart' iconColor='white' size={20} onPress={() => console.log('Apertei')}
+                                            style={{ position: 'absolute' }} />
+
+                                        <Card.Content>
+                                            <Title style={{ textAlign: 'center', fontSize: 13 }}>{item.nomesCidadesDoBrasil}</Title>
+                                        </Card.Content>
+
+                                    </Card>
+
+                                    <Card style={{ margin: 4, width: 150 }} onPress={() => navigation.navigate('Detalhes', { id: item.id })}>
+                                        <Card.Cover style={{ height: 150 }} source={{ uri: item.imgLugaresDeMaceio }} />
+                                        <IconButton
+                                            icon='heart' iconColor='white' size={20} onPress={() => console.log('Apertei')}
+                                            style={{ position: 'absolute' }} />
+
+                                        <Card.Content>
+                                            <Title style={{ textAlign: 'center', fontSize: 13 }}>{item.nomesLugaresDeMaceio}</Title>
                                         </Card.Content>
 
                                     </Card>
