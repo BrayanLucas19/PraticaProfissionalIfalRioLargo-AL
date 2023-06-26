@@ -4,22 +4,22 @@ import { Button, Card, Paragraph, Title } from 'react-native-paper';
 
 export default function TelaDeDetalhes({ route }) {
     const id = route?.params?.id;
-    const [maps, setMaps] = useState({});
+    const [usuario, setUsuario] = useState({});
 
-    const getMaps = async (userId) => {
+    const getUsuario = async (userId) => {
         try {
-            const resposta = await fetch(
+            const resposta = await (
                 'https://6398750e044fa481d69e3195.mockapi.io/Maps/' + userId
             );
             const json = await resposta.json();
-            setMaps(json);
+            setUsuario(json);
         } catch (error) {
             console.log(error);
         }
     };
 
     useEffect(() => {
-        getMaps(id);
+        getUsuario(id);
     }, [id]);
 
     return (
@@ -28,11 +28,10 @@ export default function TelaDeDetalhes({ route }) {
 
                 <View style={{ alignItems: 'center', width: 350 }}>
                     <Card style={{ alignItems: 'center', marginTop: 40 }}>
-                        <Card.Cover style={{ width: 350, height: 450, borderBottomEndRadius: 0 }} source={{ uri: maps.imgPraiasDoBrasil }} />
+                        <Card.Cover style={{ width: 350, height: 450, borderBottomEndRadius: 0 }} source={{ uri: usuario.imgPraiasDoBrasil }} />
 
                         <Card.Content style={{ marginTop: 20 }}>
-                            <Title>{maps.nomesPraiasDoBrasil}</Title>
-                            <Paragraph></Paragraph>
+                            <Title>{usuario.nomesPraiasDoBrasil}</Title>
                         </Card.Content>
                     </Card>
                 </View>

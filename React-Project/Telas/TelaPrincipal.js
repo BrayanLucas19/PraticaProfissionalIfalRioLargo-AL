@@ -1,6 +1,8 @@
 import { StyleSheet, View, FlatList, Image, ScrollView } from 'react-native'
 import { Button, Card, Title, Text, IconButton } from 'react-native-paper'
 import { useEffect, useState } from 'react';
+import { Ionicons } from '@expo/vector-icons';
+
 
 
 export default function SegundaTela({ navigation }) {
@@ -22,6 +24,8 @@ export default function SegundaTela({ navigation }) {
     useEffect(() => {
         getMaps();
     }, []);
+
+
 
     return (
 
@@ -45,10 +49,6 @@ export default function SegundaTela({ navigation }) {
                         <View>
                             <Card style={{ margin: 4, width: 300 }} onPress={() => navigation.navigate('Detalhes', { id: item.id })}>
                                 <Card.Cover style={{ height: 250 }} source={{ uri: item.imgPraiasDoBrasil }} />
-                                <IconButton
-                                    icon='heart' iconColor='white' size={20} onPress={() => console.log('Apertei')}
-                                    style={{ position: 'absolute' }} />
-
                                 <Card.Content>
                                     <Title style={{ textAlign: 'center' }}>{item.nomesPraiasDoBrasil}</Title>
                                 </Card.Content>
