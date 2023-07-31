@@ -6,15 +6,17 @@ import { Ionicons } from '@expo/vector-icons';
 
 
 export default function SegundaTela({ navigation }) {
-    const [maps, setMaps] = useState([]);
 
-    const getMaps = async () => {
+    //Primeira API dos pontos turisticos do Brasil
+    const [pontosDoBrasil, setPontosDoBrasil] = useState([]);
+
+    const getPontosDoBrasil = async () => {
         try {
             const resposta = await fetch(
-                'https://6478766d362560649a2dd1bf.mockapi.io/Maps'
+                'https://6478766d362560649a2dd1bf.mockapi.io/PontosTuristicosDoBrasil'
             );
             const json = await resposta.json();
-            setMaps(json);
+            setPontosDoBrasil(json);
         } catch (error) {
             console.log(error);
         }
@@ -22,7 +24,26 @@ export default function SegundaTela({ navigation }) {
 
 
     useEffect(() => {
-        getMaps();
+        getPontosDoBrasil();
+    }, []);
+
+    //Segunda API dos pontos turisticos de Alagoas
+    const [pontosDeAlagoas, setPontosDeAlagoas] = useState([]);
+
+    const getPontosDeAlagoas = async () => {
+        try {
+            const resposta = await fetch(
+                'https://6478766d362560649a2dd1bf.mockapi.io/PontosTuristicosDeAlagoas'
+            );
+            const json = await resposta.json();
+            setPontosDeAlagoas(json);
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
+    useEffect(() => {
+        getPontosDeAlagoas();
     }, []);
 
 
@@ -40,17 +61,17 @@ export default function SegundaTela({ navigation }) {
 
             <View style={{ alignItems: 'center', justifyContent: 'center', paddingTop: 5 }}>
                 <Text style={{ fontSize: 20, marginTop: 10, marginBottom: 20, textAlign: 'center' }}>
-                    Veja as melhores praias do Brasil
+                    Melhores pontos turisticos do Brasil
                 </Text>
                 <FlatList
                     horizontal={true}
-                    data={maps}
+                    data={pontosDoBrasil}
                     renderItem={({ item }) => (
                         <View>
                             <Card style={{ margin: 4, width: 300 }} onPress={() => navigation.navigate('Detalhes', { id: item.id })}>
-                                <Card.Cover style={{ height: 250 }} source={{ uri: item.imgPraiasDoBrasil }} />
+                                <Card.Cover style={{ height: 250 }} source={{ uri: item.imagemPontosDoBrasil }} />
                                 <Card.Content>
-                                    <Title style={{ textAlign: 'center' }}>{item.nomesPraiasDoBrasil}</Title>
+                                    <Title style={{ textAlign: 'center' }}>{item.nomePontosDoBrasil}</Title>
                                 </Card.Content>
 
                             </Card>
@@ -61,23 +82,19 @@ export default function SegundaTela({ navigation }) {
                 />
             </View>
 
-            <View style={{ alignItems: 'center', justifyContent: 'center', paddingTop: 25 }}>
-                <Text style={{ fontSize: 20, marginTop: 10, marginBottom: 10 }}>
-                    Pontos Turisticos de Macéio
+            <View style={{ alignItems: 'center', justifyContent: 'center', paddingTop: 5 }}>
+                <Text style={{ fontSize: 20, marginTop: 10, marginBottom: 20, textAlign: 'center' }}>
+                    Pontos turisticos de Alagoas
                 </Text>
                 <FlatList
                     horizontal={true}
-                    data={maps}
+                    data={pontosDeAlagoas}
                     renderItem={({ item }) => (
                         <View>
-                            <Card style={{ margin: 4, width: 130 }} onPress={() => navigation.navigate('Detalhes', { id: item.id })}>
-                                <Card.Cover source={{ uri: item.imgLugaresDeMaceio }} />
-                                <IconButton
-                                    icon='heart' iconColor='white' size={20}
-                                    style={{ position: 'absolute' }} />
-
+                            <Card style={{ margin: 4, width: 200 }} onPress={() => navigation.navigate('Detalhes', { id: item.id })}>
+                                <Card.Cover style={{ height: 250 }} source={{ uri: item.imagemPontosDeAlagoas }} />
                                 <Card.Content>
-                                    <Title style={{ textAlign: 'center', fontSize: 12 }}>{item.nomesLugaresDeMaceio}</Title>
+                                    <Title style={{ textAlign: 'center' }}>{item.nomePontosDeAlagoas}</Title>
                                 </Card.Content>
 
                             </Card>
@@ -88,32 +105,8 @@ export default function SegundaTela({ navigation }) {
                 />
             </View>
 
-            <View style={{ alignItems: 'center', justifyContent: 'center', paddingTop: 25 }}>
-                <Text style={{ fontSize: 20, marginTop: 10, marginBottom: 10 }}>
-                    As cidades mais visitadas do Brasil
-                </Text>
-                <FlatList
-                    horizontal={true}
-                    data={maps}
-                    renderItem={({ item }) => (
-                        <View>
-                            <Card style={{ margin: 4, width: 130 }} onPress={() => navigation.navigate('Detalhes', { id: item.id })}>
-                                <Card.Cover source={{ uri: item.imgCidadesDoBrasil }} />
-                                <IconButton
-                                    icon='heart' iconColor='white' size={20} onPress={() => console.log('Apertei')}
-                                    style={{ position: 'absolute' }} />
+            <View style={{ paddingTop: 50 }}></View>
 
-                                <Card.Content>
-                                    <Title style={{ textAlign: 'center', fontSize: 12 }}>{item.nomesCidadesDoBrasil}</Title>
-                                </Card.Content>
-
-                            </Card>
-
-                        </View>
-
-                    )}
-                />
-            </View>
         </ScrollView>
 
     )

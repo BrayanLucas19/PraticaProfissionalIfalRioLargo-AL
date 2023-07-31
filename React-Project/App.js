@@ -62,7 +62,6 @@ function MyTab() {
             return < Ionicons name='person-outline' color={'gray'} size={size} />
           }
         }} />
-      <Tab.Screen name='Detalhes' component={TelaDeDetalhes} options={{ title: false, headerTransparent: true }} />
     </Tab.Navigator>
   );
 }
@@ -73,6 +72,8 @@ function MyStack() {
       <Stack.Screen name='TelaDeLogin' component={TelaDeLogin} options={{ headerShown: false }} />
       <Stack.Screen name='TelaPrincipal' component={MyTab} options={{ headerShown: false }} />
       <Stack.Screen name='TelaDeCadastro' component={TelaDeCadastro} options={{ title: false, headerTransparent: true }} />
+      <Stack.Screen name='Detalhes' component={TelaDeDetalhes} options={{ title: false, headerTransparent: true }} />
+
     </Stack.Navigator>
   );
 }

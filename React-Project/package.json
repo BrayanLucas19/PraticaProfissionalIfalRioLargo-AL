@@ -19,7 +19,7 @@
     "mysql2": "^3.3.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-native": "0.71.6",
+    "react-native": "0.71.8",
     "react-native-ionicons": "^4.6.5",
     "react-native-paper": "^5.7.0",
     "react-native-stars": "^1.2.2",
