@@ -6,7 +6,8 @@ import TelaPrincipal from './Telas/TelaPrincipal';
 import TelaDePesquisa from './Telas/TelaDePesquisa';
 import TelaDePerfil from './Telas/TelaDePerfil';
 import TelaDeCadastro from './Telas/TelaDeCadastro';
-import TelaDeDetalhes from './Telas/TelaDeDetalhes';
+import TelaDeDetalhes1 from './Telas/TelaDeDetalhes1';
+import TelaDeDetalhes2 from './Telas/TelaDeDetalhes2';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -72,7 +73,9 @@ function MyStack() {
       <Stack.Screen name='TelaDeLogin' component={TelaDeLogin} options={{ headerShown: false }} />
       <Stack.Screen name='TelaPrincipal' component={MyTab} options={{ headerShown: false }} />
       <Stack.Screen name='TelaDeCadastro' component={TelaDeCadastro} options={{ title: false, headerTransparent: true }} />
-      <Stack.Screen name='Detalhes' component={TelaDeDetalhes} options={{ title: false, headerTransparent: true }} />
+      <Stack.Screen name='Detalhes1' component={TelaDeDetalhes1} options={{ title: false, headerTransparent: true }} />
+      <Stack.Screen name='Detalhes2' component={TelaDeDetalhes2} options={{ title: false, headerTransparent: true }} />
+
 
     </Stack.Navigator>
   );

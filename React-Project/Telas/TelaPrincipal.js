@@ -68,7 +68,7 @@ export default function SegundaTela({ navigation }) {
                     data={pontosDoBrasil}
                     renderItem={({ item }) => (
                         <View>
-                            <Card style={{ margin: 4, width: 300 }} onPress={() => navigation.navigate('Detalhes', { id: item.id })}>
+                            <Card style={{ margin: 4, width: 300 }} onPress={() => navigation.navigate('Detalhes1', { id: item.id })}>
                                 <Card.Cover style={{ height: 250 }} source={{ uri: item.imagemPontosDoBrasil }} />
                                 <Card.Content>
                                     <Title style={{ textAlign: 'center' }}>{item.nomePontosDoBrasil}</Title>
@@ -91,7 +91,7 @@ export default function SegundaTela({ navigation }) {
                     data={pontosDeAlagoas}
                     renderItem={({ item }) => (
                         <View>
-                            <Card style={{ margin: 4, width: 200 }} onPress={() => navigation.navigate('Detalhes', { id: item.id })}>
+                            <Card style={{ margin: 4, width: 200 }} onPress={() => navigation.navigate('Detalhes2', { id: item.id })}>
                                 <Card.Cover style={{ height: 250 }} source={{ uri: item.imagemPontosDeAlagoas }} />
                                 <Card.Content>
                                     <Title style={{ textAlign: 'center' }}>{item.nomePontosDeAlagoas}</Title>
