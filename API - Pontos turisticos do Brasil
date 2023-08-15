@@ -1,0 +1,51 @@
+[
+ {
+  "nomePontosDoBrasil": "Cristo Redentor",
+  "imagemPontosDoBrasil": "https://lh3.googleusercontent.com/p/AF1QipPVvMXepViQYImZqpj6p2TyUQ3Ocfb67B36VMF5=s680-w680-h510 1",
+  "avaliacaoPontosDoBrasil": "4.8",
+  "enderecoPontosDoBrasil": "Parque Nacional da Tijuca - Alto da Boa Vista, Rio de Janeiro - RJ 1",
+  "id": "1"
+ },
+ {
+  "nomePontosDoBrasil": "Parque Ibirapuera",
+  "imagemPontosDoBrasil": "https://lh3.googleusercontent.com/p/AF1QipODhkaMN6-iU-abxTHRMPBpwlj_oVVhhzuruEIh=s680-w680-h510",
+  "avaliacaoPontosDoBrasil": "4.8",
+  "enderecoPontosDoBrasil": "Av. Pedro Álvares Cabral - Vila Mariana, São Paulo - SP",
+  "id": "2"
+ },
+ {
+  "nomePontosDoBrasil": "ardim Botânico de Curitiba",
+  "imagemPontosDoBrasil": "https://lh3.googleusercontent.com/p/AF1QipPOabHhw2FlSgIHXAKq70NVKmMsxFQC8WPY5thS=s680-w680-h510",
+  "avaliacaoPontosDoBrasil": "4.8",
+  "enderecoPontosDoBrasil": "R. Engo. Ostoja Roguski, 350 - Jardim Botânico, Curitiba",
+  "id": "3"
+ },
+ {
+  "nomePontosDoBrasil": "Elevador Lacerda",
+  "imagemPontosDoBrasil": "https://lh3.googleusercontent.com/p/AF1QipOaF8LzkGmfL_0_YIlfvmHRGhJY9cuZY_xN48AG=s680-w680-h510",
+  "avaliacaoPontosDoBrasil": "4.5",
+  "enderecoPontosDoBrasil": "Praça Tomé de Souza, S/N - Centro, Salvador",
+  "id": "4"
+ },
+ {
+  "nomePontosDoBrasil": "Parque Nacional da Chapada dos Veadeiros",
+  "imagemPontosDoBrasil": "https://lh3.googleusercontent.com/p/AF1QipNDvYmi0EDSU_6SB3bxzX0s98QAi3uvfmJ5SW81=s680-w680-h510",
+  "avaliacaoPontosDoBrasil": "4.9",
+  "enderecoPontosDoBrasil": "Rodovia GO 239, Km 36 - Vila de São Jorge, Alto Paraíso de Goiás - GO, 73770-000",
+  "id": "5"
+ },
+ {
+  "nomePontosDoBrasil": "Catedral Metropolitana Nossa Senhora Aparecida",
+  "imagemPontosDoBrasil": "https://lh3.googleusercontent.com/p/AF1QipNWLSqpkVf4INnX3bD7Q84QQqbCxAS20jeinCg-=s680-w680-h510",
+  "avaliacaoPontosDoBrasil": "4.8 6",
+  "enderecoPontosDoBrasil": "Endereço: Esplanada dos Ministérios lote 12 - Brasília",
+  "id": "6"
+ },
+ {
+  "nomePontosDoBrasil": "Museu de Arte de São Paulo Assis Chateaubriand",
+  "imagemPontosDoBrasil": "https://lh3.googleusercontent.com/p/AF1QipOdseXc1Z3i50UN3Zou_sjbolii6FGn2gWbiSjM=s680-w680-h510",
+  "avaliacaoPontosDoBrasil": "4.7",
+  "enderecoPontosDoBrasil": " Av. Paulista, 1578 - Bela Vista, São Paulo - SP",
+  "id": "7"
+ }
+]
