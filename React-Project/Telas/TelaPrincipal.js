@@ -1,5 +1,5 @@
 import { StyleSheet, View, FlatList, Image, ScrollView } from 'react-native'
-import { Button, Card, Title, Text, IconButton } from 'react-native-paper'
+import { Button, Card, Title, Text, IconButton, Paragraph } from 'react-native-paper'
 import { useEffect, useState } from 'react';
 import { Ionicons } from '@expo/vector-icons';
 
@@ -68,10 +68,21 @@ export default function SegundaTela({ navigation }) {
                     data={pontosDoBrasil}
                     renderItem={({ item }) => (
                         <View>
-                            <Card style={{ margin: 4, width: 300 }} onPress={() => navigation.navigate('Detalhes1', { id: item.id })}>
+                            <Card style={{ margin: 4, width: 300, height: 420 }} onPress={() => navigation.navigate('Detalhes1', { id: item.id })}>
                                 <Card.Cover style={{ height: 250 }} source={{ uri: item.imagemPontosDoBrasil }} />
                                 <Card.Content>
-                                    <Title style={{ textAlign: 'center' }}>{item.nomePontosDoBrasil}</Title>
+                                    <Title style={{ textAlign: 'left', fontSize: 20 }}>{item.nomePontosDoBrasil}</Title>
+                                    
+                                    <Paragraph style={{textAlign: 'left', fontSize: 12}}>{item.enderecoPontosDoBrasil}        
+                                    </Paragraph>
+                                    
+                                    <View style={{justifyContent: 'flex-end'}}>
+                                        <Paragraph style={{textAlign: 'left', fontSize: 15, color: '#B8860B'}}>
+                                            <IconButton icon={'star'} iconColor='#B8860B' style={{textAlign: 'left'}}
+                                            size={30}>
+                                            </IconButton>
+                                        {item.avaliacaoPontosDoBrasil}</Paragraph>
+                                    </View>
                                 </Card.Content>
 
                             </Card>

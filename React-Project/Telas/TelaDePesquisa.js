@@ -34,7 +34,7 @@ export default function TelaDePesquisa() {
                             numColumns={2}
                             renderItem={({ item }) => (
                                 <View>
-                                    <Card style={{ margin: 4, width: 150 }} onPress={() => navigation.navigate('Detalhes', { id: item.id })}>
+                                    <Card style={{ margin: 4, width: 150 }} onPress={() => navigation.navigate('', { id: item.id })}>
                                         <Card.Cover style={{ height: 150 }} source={{ uri: item.imgPraiasDoBrasil }} />
                                         <IconButton
                                             icon='heart' iconColor='white' size={20} onPress={() => console.log('Apertei')}
