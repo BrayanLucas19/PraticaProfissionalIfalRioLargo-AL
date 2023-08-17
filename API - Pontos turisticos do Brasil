@@ -1,9 +1,11 @@
 [
  {
   "nomePontosDoBrasil": "Cristo Redentor",
-  "imagemPontosDoBrasil": "https://lh3.googleusercontent.com/p/AF1QipPVvMXepViQYImZqpj6p2TyUQ3Ocfb67B36VMF5=s680-w680-h510 1",
+  "imagemPontosDoBrasil": "https://cdn.limber.net.br/img/bilhetes/3073/3073-CFwXwozTS6.jpeg",
   "avaliacaoPontosDoBrasil": "4.8",
   "enderecoPontosDoBrasil": "Parque Nacional da Tijuca - Alto da Boa Vista, Rio de Janeiro - RJ 1",
+  "cidadePontosDoBrasil": "Rio de Janeiro",
+  "descricaoPontosDoBrasil": "Cristo Redentor é uma estátua art déco que retrata Jesus Cristo, localizada no topo do morro do Corcovado, a 709 metros acima do nível do mar, com vista para parte considerável da cidade brasileira do Rio de Janeiro. ",
   "id": "1"
  },
  {
@@ -11,6 +13,8 @@
   "imagemPontosDoBrasil": "https://lh3.googleusercontent.com/p/AF1QipODhkaMN6-iU-abxTHRMPBpwlj_oVVhhzuruEIh=s680-w680-h510",
   "avaliacaoPontosDoBrasil": "4.8",
   "enderecoPontosDoBrasil": "Av. Pedro Álvares Cabral - Vila Mariana, São Paulo - SP",
+  "cidadePontosDoBrasil": "São Paulo",
+  "descricaoPontosDoBrasil": "O Parque Ibirapuera é um parque urbano localizado na cidade de São Paulo, Brasil. Em 2017, foi o parque mais visitado da América Latina, com aproximadamente 14 milhões de visitas, além de ser um dos locais mais fotografados do mundo.",
   "id": "2"
  },
  {
@@ -18,6 +22,8 @@
   "imagemPontosDoBrasil": "https://lh3.googleusercontent.com/p/AF1QipPOabHhw2FlSgIHXAKq70NVKmMsxFQC8WPY5thS=s680-w680-h510",
   "avaliacaoPontosDoBrasil": "4.8",
   "enderecoPontosDoBrasil": "R. Engo. Ostoja Roguski, 350 - Jardim Botânico, Curitiba",
+  "cidadePontosDoBrasil": "Curitiba",
+  "descricaoPontosDoBrasil": "O Jardim Botânico de Curitiba, ou Jardim Botânico Francisca Richbieter, é um dos principais pontos turísticos da cidade de Curitiba, capital do estado brasileiro do Paraná. Localiza-se no bairro Jardim Botânico.",
   "id": "3"
  },
  {
@@ -25,20 +31,26 @@
   "imagemPontosDoBrasil": "https://lh3.googleusercontent.com/p/AF1QipOaF8LzkGmfL_0_YIlfvmHRGhJY9cuZY_xN48AG=s680-w680-h510",
   "avaliacaoPontosDoBrasil": "4.5",
   "enderecoPontosDoBrasil": "Praça Tomé de Souza, S/N - Centro, Salvador",
+  "cidadePontosDoBrasil": "Salvador",
+  "descricaoPontosDoBrasil": "O Elevador Lacerda é um sistema de transporte público da cidade de Salvador, capital do estado brasileiro da Bahia. Trata-se do primeiro elevador urbano do mundo. Em 8 de dezembro de 1873, quando a primeira torre foi inaugurada, era o elevador mais alto do mundo, com 63 metros.",
   "id": "4"
  },
  {
   "nomePontosDoBrasil": "Parque Nacional da Chapada dos Veadeiros",
   "imagemPontosDoBrasil": "https://lh3.googleusercontent.com/p/AF1QipNDvYmi0EDSU_6SB3bxzX0s98QAi3uvfmJ5SW81=s680-w680-h510",
   "avaliacaoPontosDoBrasil": "4.9",
-  "enderecoPontosDoBrasil": "Rodovia GO 239, Km 36 - Vila de São Jorge, Alto Paraíso de Goiás - GO, 73770-000",
+  "enderecoPontosDoBrasil": "Rodovia GO 239, Km 36 - Vila de São Jorge, Alto Paraíso de Goiás - GO",
+  "cidadePontosDoBrasil": "Goiás",
+  "descricaoPontosDoBrasil": "O Parque Nacional da Chapada dos Veadeiros fica no estado de Goiás, no centro do Brasil. É conhecido pelos deslumbrantes desfiladeiros e formações de cristais de quartzo. O rio Preto tem piscinas rochosas e quedas de água, algumas delas com mais de 100 metros de altura. O parque de biodiversidade alberga várias espécies de orquídeas e de vida selvagem, incluindo tatus, jaguares e tucanos. O acesso ao parque faz-se através das cidades vizinhas do Alto Paraíso de Goiás ou de São Jorge. ",
   "id": "5"
  },
  {
   "nomePontosDoBrasil": "Catedral Metropolitana Nossa Senhora Aparecida",
   "imagemPontosDoBrasil": "https://lh3.googleusercontent.com/p/AF1QipNWLSqpkVf4INnX3bD7Q84QQqbCxAS20jeinCg-=s680-w680-h510",
-  "avaliacaoPontosDoBrasil": "4.8 6",
+  "avaliacaoPontosDoBrasil": "4.8",
   "enderecoPontosDoBrasil": "Endereço: Esplanada dos Ministérios lote 12 - Brasília",
+  "cidadePontosDoBrasil": "Brasilia",
+  "descricaoPontosDoBrasil": "A Catedral Metropolitana - Nossa Senhora Aparecida ou simplesmente Catedral de Brasília, é um templo católico brasileiro, na qual se encontra a cátedra da Arquidiocese de Brasília, localizada na capital federal, ao sul da S1, no Eixo Monumental, região da Esplanada dos Ministérios. ",
   "id": "6"
  },
  {
@@ -46,6 +58,8 @@
   "imagemPontosDoBrasil": "https://lh3.googleusercontent.com/p/AF1QipOdseXc1Z3i50UN3Zou_sjbolii6FGn2gWbiSjM=s680-w680-h510",
   "avaliacaoPontosDoBrasil": "4.7",
   "enderecoPontosDoBrasil": " Av. Paulista, 1578 - Bela Vista, São Paulo - SP",
+  "cidadePontosDoBrasil": "São Paulo",
+  "descricaoPontosDoBrasil": "Museu de Arte de São Paulo Assis Chateaubriand é um centro cultural e museu de arte brasileiro concebido em 1947 idealizado pelo jornalista paraibano Assis Chateaubriand. Entre os anos de 1947 e 1990, o crítico e marchand italiano Pietro Bardi assumiu a direção do MASP a convite de Chateaubriand.",
   "id": "7"
  }
 ]

@@ -1,9 +1,6 @@
 import { StyleSheet, View, FlatList, Image, ScrollView } from 'react-native'
 import { Button, Card, Title, Text, IconButton, Paragraph } from 'react-native-paper'
 import { useEffect, useState } from 'react';
-import { Ionicons } from '@expo/vector-icons';
-
-
 
 export default function SegundaTela({ navigation }) {
 
@@ -51,7 +48,7 @@ export default function SegundaTela({ navigation }) {
     return (
 
         <ScrollView>
-            <View style={{ alignItems: 'end' }}>
+            <View style={{ alignItems: 'flex-end' }}>
                 <IconButton icon={'cog'} size={24} iconColor={'black'} />
             </View>
             <View style={{ alignItems: 'center' }}>
@@ -60,7 +57,10 @@ export default function SegundaTela({ navigation }) {
             </View>
 
             <View style={{ alignItems: 'center', justifyContent: 'center', paddingTop: 5 }}>
-                <Text style={{ fontSize: 20, marginTop: 10, marginBottom: 20, textAlign: 'center' }}>
+                <Text style={{
+                    fontSize: 20, marginTop: 10, marginBottom: 20, textAlign: 'center', backgroundColor: '#345D50',
+                    width: '100%', paddingVertical: 7, color: 'white'
+                }}>
                     Melhores pontos turisticos do Brasil
                 </Text>
                 <FlatList
@@ -68,21 +68,24 @@ export default function SegundaTela({ navigation }) {
                     data={pontosDoBrasil}
                     renderItem={({ item }) => (
                         <View>
-                            <Card style={{ margin: 4, width: 300, height: 420 }} onPress={() => navigation.navigate('Detalhes1', { id: item.id })}>
-                                <Card.Cover style={{ height: 250 }} source={{ uri: item.imagemPontosDoBrasil }} />
+                            <Card style={{ margin: 4, width: 250, height: 450 }} onPress={() =>
+                                navigation.navigate('Detalhes1', { id: item.id })}>
+                                <Card.Cover source={{ uri: item.imagemPontosDoBrasil }} />
                                 <Card.Content>
-                                    <Title style={{ textAlign: 'left', fontSize: 20 }}>{item.nomePontosDoBrasil}</Title>
-                                    
-                                    <Paragraph style={{textAlign: 'left', fontSize: 12}}>{item.enderecoPontosDoBrasil}        
+                                    <Title style={{ textAlign: 'left', fontSize: 25, paddingTop: 1 }}>{item.nomePontosDoBrasil}</Title>
+
+                                    <Paragraph style={{ textAlign: 'left', fontSize: 15, paddingTop: 1 }}>{item.cidadePontosDoBrasil}
                                     </Paragraph>
-                                    
-                                    <View style={{justifyContent: 'flex-end'}}>
-                                        <Paragraph style={{textAlign: 'left', fontSize: 15, color: '#B8860B'}}>
-                                            <IconButton icon={'star'} iconColor='#B8860B' style={{textAlign: 'left'}}
-                                            size={30}>
-                                            </IconButton>
+
+                                    <Paragraph style={{ textAlign: 'left', fontSize: 15, color: 'green', paddingTop: 1 }}>
+                                        {item.enderecoPontosDoBrasil}
+                                    </Paragraph>
+
+                                    <Paragraph style={{ textAlign: 'left', fontSize: 21, color: '#B8860B', paddingTop: 1 }}>
+                                        <IconButton icon={'star'} iconColor='#B8860B'
+                                            style={{ textAlign: 'left' }} size={35}>
+                                        </IconButton>
                                         {item.avaliacaoPontosDoBrasil}</Paragraph>
-                                    </View>
                                 </Card.Content>
 
                             </Card>
@@ -94,7 +97,10 @@ export default function SegundaTela({ navigation }) {
             </View>
 
             <View style={{ alignItems: 'center', justifyContent: 'center', paddingTop: 5 }}>
-                <Text style={{ fontSize: 20, marginTop: 10, marginBottom: 20, textAlign: 'center' }}>
+                <Text style={{
+                    fontSize: 20, marginTop: 10, marginBottom: 20, textAlign: 'center', backgroundColor: '#345D50',
+                    width: '100%', paddingVertical: 7, color: 'white'
+                }}>
                     Pontos turisticos de Alagoas
                 </Text>
                 <FlatList
@@ -102,10 +108,23 @@ export default function SegundaTela({ navigation }) {
                     data={pontosDeAlagoas}
                     renderItem={({ item }) => (
                         <View>
-                            <Card style={{ margin: 4, width: 200 }} onPress={() => navigation.navigate('Detalhes2', { id: item.id })}>
-                                <Card.Cover style={{ height: 250 }} source={{ uri: item.imagemPontosDeAlagoas }} />
+                            <Card style={{ margin: 4, width: 250, height: 360 }} onPress={() => navigation.navigate('Detalhes2', { id: item.id })}>
+                                <Card.Cover source={{ uri: item.imagemPontosDeAlagoas }} />
                                 <Card.Content>
-                                    <Title style={{ textAlign: 'center' }}>{item.nomePontosDeAlagoas}</Title>
+                                    <Title style={{ textAlign: 'left', fontSize: 20, paddingTop: 1 }}>{item.nomePontosDeAlagoas}</Title>
+
+                                    <Paragraph style={{ textAlign: 'left', fontSize: 13, paddingTop: 1 }}>{item.nomeCidadePontosDeAlagoas}
+                                    </Paragraph>
+
+                                    <Paragraph style={{ textAlign: 'left', fontSize: 13, color: 'green', paddingTop: 1 }}>
+                                        {item.enderecoPontosDeAlagoas}
+                                    </Paragraph>
+
+                                    <Paragraph style={{ textAlign: 'left', fontSize: 15, color: '#B8860B', paddingTop: 1, alignItems: 'flex-end' }}>
+                                        <IconButton icon={'star'} iconColor='#B8860B'
+                                            style={{ textAlign: 'left' }} size={25}>
+                                        </IconButton>
+                                        {item.avaliacaoPontosDeAlagoas}</Paragraph>
                                 </Card.Content>
 
                             </Card>
@@ -122,32 +141,3 @@ export default function SegundaTela({ navigation }) {
 
     )
 }
-
-const style = StyleSheet.create({
-
-    inputDePesquisa: {
-        marginTop: 20,
-        marginRight: 30,
-        marginLeft: 30,
-    },
-
-    SurfaceMaior: {
-        backgroundColor: '#7200CC',
-        height: 150,
-        width: 330,
-        borderRadius: 20,
-        alignItems: 'center',
-    },
-
-    SurfaceMenor: {
-        marginTop: 14,
-        marginRight: 160,
-        backgroundColor: '#470080',
-        height: 120,
-        width: 110,
-        borderRadius: 10,
-        justifyContent: 'center',
-        alignItems: 'center'
-
-    }
-})
