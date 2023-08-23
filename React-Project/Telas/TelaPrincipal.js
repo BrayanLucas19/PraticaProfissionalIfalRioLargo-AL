@@ -10,7 +10,7 @@ export default function SegundaTela({ navigation }) {
     const getPontosDoBrasil = async () => {
         try {
             const resposta = await fetch(
-                'https://6478766d362560649a2dd1bf.mockapi.io/PontosTuristicosDoBrasil'
+                'https://6478766d362560649a2dd1bf.mockapi.io/PontosTuristicosDoBrasil/'
             );
             const json = await resposta.json();
             setPontosDoBrasil(json);
@@ -30,7 +30,7 @@ export default function SegundaTela({ navigation }) {
     const getPontosDeAlagoas = async () => {
         try {
             const resposta = await fetch(
-                'https://6478766d362560649a2dd1bf.mockapi.io/PontosTuristicosDeAlagoas'
+                'https://6478766d362560649a2dd1bf.mockapi.io/PontosTuristicosDeAlagoas/'
             );
             const json = await resposta.json();
             setPontosDeAlagoas(json);
